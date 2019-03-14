@@ -742,7 +742,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 .work-link-wrapper {
     transition: all .2s ease;
     transform: translateY(0);
-    background: transparent;
+    background: lightblue;
     box-shadow: 0 0 0 rgba(93,93,93,0)
 }
 
@@ -919,4 +919,44 @@ section:nth-of-type(6) .column:nth-of-type(2) {
         align-self: flex-end;
         text-align: right
     }
+}
+
+.hockey-cards {
+  position: relative;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hockey-cards__card {
+  position: absolute;
+  top:0;
+  width: 150px;
+  height: 210px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: transform 0.2s ease-in-out;
+  background-color: white;
+}
+
+.hockey-cards__card:nth-child(1) {
+  transform:translateY(4px) rotate(2deg)
+}
+.hockey-cards__card:nth-child(2) {
+  transform:translateY(2px) rotate(-3deg)
+}
+.hockey-cards__card:nth-child(3) {
+
+}
+
+.work-link-wrapper:hover .hockey-cards__card:nth-child(1) {
+  transform: translateX(-75px) rotate(0)
+}
+
+.work-link-wrapper:hover .hockey-cards__card:nth-child(2) {
+  transform: translateX(0) rotate(0)
+}
+
+.work-link-wrapper:hover .hockey-cards__card:nth-child(3) {
+  transform: translateX(75px) rotate(0)
 }
