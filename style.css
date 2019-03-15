@@ -167,7 +167,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 }
 
 .social-list__item-link:active,.social-list__item-link:focus,.social-list__item-link:hover {
-    color: #2fe0c5
+    color: #00a5cf
 }
 
 .project {
@@ -260,7 +260,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 }
 
 .lede a {
-    color: #3cdab4
+    color: #029bc1
 }
 
 .lede-list {
@@ -331,7 +331,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     padding-left: 5%;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    background: #3cdab4
+    background: #029bc1
 }
 
 @media screen and (min-width: 1600px) {
@@ -347,7 +347,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 }
 
 .project-link.project-link--last {
-    background: #2fe0c5;
+    background: #00a5cf;
     padding-right: 5%;
     -ms-flex-pack: end;
     justify-content: flex-end
@@ -385,7 +385,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 .project-button {
     display: block;
     margin-top: 2em;
-    color: #3cdab4;
+    color: #029bc1;
     transition: color .15s ease-in-out
 }
 
@@ -419,7 +419,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 }
 
 .step-body a {
-    color: #3cdab4
+    color: #029bc1
 }
 
 .hero .container {
@@ -448,7 +448,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 }
 
 .hero__link {
-    color: #2fe0c5;
+    color: #00a5cf;
     transition: color .25s ease
 }
 
@@ -579,7 +579,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 }
 
 .nav__list-item:active,.nav__list-item:focus,.nav__list-item:hover {
-    color: #2fe0c5
+    color: #00a5cf
 }
 
 .logo-circle,.logo-letter,.logo-shadow,.logo-triangle {
@@ -743,7 +743,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     transition: all .2s ease;
     transform: translateY(0);
     background: lightblue;
-    box-shadow: 0 0 0 rgba(93,93,93,0)
+    box-shadow: 0 0 0 rgba(93,93,93,0);
 }
 
 .work-link-wrapper:hover {
@@ -757,10 +757,22 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     height: auto
 }
 
+.work-link-media {
+  height: 240px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-link-media img {
+  height: 90%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 .work-link-content {
     position: relative;
     z-index: 10;
-    border-radius: 4px;
     width: 100%;
     background: #fff;
     padding: 25px
@@ -786,7 +798,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 .work {
     margin-top: 2em;
     padding: 4em 0;
-    background: #fbfbfb
+    background: #eeea
 }
 
 @media screen and (min-width: 768px) {
@@ -842,7 +854,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     transform: translateY(-3px);
     border-color: transparent;
     box-shadow: 0 1px 6px rgba(93,93,93,.16);
-    background: linear-gradient(90deg,#2fe0c5,#3bdcc4,#2fe0c5);
+    background: linear-gradient(90deg,#00a5cf,#029bc1,#00a5cf);
     color: #fff
 }
 
@@ -866,7 +878,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     -ms-flex: 3 1 100%;
     flex: 3 1 100%;
     margin-bottom: 0;
-    color: #3cdab4;
+    color: #029bc1;
     letter-spacing: 0;
     line-height: 1.2;
     font-size: 2.6rem
@@ -923,7 +935,6 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 
 .hockey-cards {
   position: relative;
-  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -931,7 +942,6 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 
 .hockey-cards__card {
   position: absolute;
-  top:0;
   width: 150px;
   height: 210px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
