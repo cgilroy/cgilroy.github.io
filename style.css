@@ -775,7 +775,11 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     z-index: 10;
     width: 100%;
     background: #fff;
-    padding: 25px
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .link-content__header {
@@ -787,6 +791,33 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     font-size: 1.8rem;
     font-weight: 400;
     transition: color .3s ease
+}
+
+.link-content__link-reveal {
+  position: absolute;
+  right:-25%;
+  background: #eee;
+  transition: all 0.2s ease-out;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 25%;
+}
+
+.link-content__link {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.link-content__link:hover path {
+    fill:#5d5d5d;
+}
+
+.link-content__link path {
+    fill: #00a5cf
 }
 
 @media screen and (min-width: 768px) {
@@ -841,7 +872,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     padding: 18px 5% 20px;
     border-bottom: 1px solid #dadada;
     box-shadow: 0 0 0 rgba(93,93,93,.16);
-    background: linear-gradient(#fbfbfb,#fbfbfb);
+    background: #fbfbfb;
     transition: all .3s ease;
     list-style: none
 }
@@ -854,7 +885,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     transform: translateY(-3px);
     border-color: transparent;
     box-shadow: 0 1px 6px rgba(93,93,93,.16);
-    background: linear-gradient(90deg,#00a5cf,#029bc1,#00a5cf);
+    background: #00a5cf;
     color: #fff
 }
 
@@ -969,4 +1000,12 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 
 .work-link-wrapper:hover .hockey-cards__card:nth-child(3) {
   transform: translateX(75px) rotate(0)
+}
+
+.work-link-wrapper:hover .link-content__link-reveal {
+  right: 0;
+}
+
+.work-link-wrapper:hover .link-content__header {
+  width: 75%;
 }
