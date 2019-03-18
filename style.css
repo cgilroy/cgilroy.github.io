@@ -714,7 +714,7 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 
 @media screen and (min-width: 768px) {
     .featured-work-container {
-        padding-bottom:8em;
+        padding-bottom:0;
         padding-left: 15px;
         padding-right: 15px
     }
@@ -778,8 +778,9 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     padding: 25px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     overflow: hidden;
+    transition: 0.2s all ease-in-out;
 }
 
 .link-content__header {
@@ -790,7 +791,9 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     line-height: 1.2;
     font-size: 1.8rem;
     font-weight: 400;
-    transition: color .3s ease
+    transition: color .3s ease;
+    width: 100%;
+    transition: width 0.2s ease-in-out;
 }
 
 .link-content__link-reveal {
@@ -807,8 +810,8 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 }
 
 .link-content__link {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     padding: 5px;
 }
 
@@ -980,6 +983,11 @@ section:nth-of-type(6) .column:nth-of-type(2) {
   background-color: white;
 }
 
+.hockey-cards__card img {
+  height: 100%;
+  width: 100%;
+}
+
 .hockey-cards__card:nth-child(1) {
   transform:translateY(4px) rotate(2deg)
 }
@@ -1008,4 +1016,39 @@ section:nth-of-type(6) .column:nth-of-type(2) {
 
 .work-link-wrapper:hover .link-content__header {
   width: 75%;
+}
+
+#website-redesign-image {
+  width: 325px;
+  height: 216px;
+  /* background-image: url("resources/old-website.jpg"); */
+  background-size: contain;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  animation: loop-images 6s infinite ease-in-out;
+}
+
+@keyframes loop-images {
+  0% {
+    background-image: url("resources/old-website.jpg")
+  }
+  25% {
+    background-image: url("resources/old-website.jpg")
+  }
+  50% {
+    background-image: url("resources/new-website.jpg");
+  }
+  75% {
+    background-image: url("resources/new-website.jpg");
+  }
+  100% {
+    background-image: url("resources/old-website.jpg");
+  }
+}
+
+#profile-pic {
+  width:250px;
+  height:250Px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2em;
 }

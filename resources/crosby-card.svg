@@ -17,7 +17,7 @@
   <rect height="350" width="250" fill="#FCB514"></rect>
   <g id="playerInfo">
     <g style="clip-path: url(&quot;#clip-path&quot;);">
-      <image x="5" y="55" width="250" height="250" preserveAspectRatio="xMidYMid slice" xlink:href="/resources/crosby.jpg"></image>
+      <image x="5" y="55" width="250" height="250" preserveAspectRatio="xMidYMid slice" xlink:href="https://nhl.bamcontent.com/images/actionshots/8471675.jpg"></image>
       <g>
         <rect transform="translate(0 300)" width="200px" height="70px" style="fill: rgb(247, 245, 232);"></rect>
         <text transform="translate(15 317)" style="font-size: 13px; font-family: Arial-BoldMT, Arial; font-weight: 700; pointer-events: none;">
